@@ -34,11 +34,11 @@ namespace Net.Bertware.Bukkitgui2.AddOn.Plugins
 			this.tabctrlPlugins = new MetroFramework.Controls.MetroTabControl();
 			this.tabInstalled = new System.Windows.Forms.TabPage();
 			this.installedCtrl = new Net.Bertware.Bukkitgui2.AddOn.Plugins.InstalledPlugins.InstalledPluginsControl();
-			this.tabBukget = new System.Windows.Forms.TabPage();
-			this.bukgetCtrl = new Net.Bertware.Bukkitgui2.AddOn.Plugins.Bukget.BukgetPluginsControl();
+			this.tabSpiget = new System.Windows.Forms.TabPage();
+			this.spigetCtrl = new Net.Bertware.Bukkitgui2.AddOn.Plugins.Spiget.SpigetPluginsControl();
 			this.tabctrlPlugins.SuspendLayout();
 			this.tabInstalled.SuspendLayout();
-			this.tabBukget.SuspendLayout();
+			this.tabSpiget.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// tabctrlPlugins
@@ -47,7 +47,7 @@ namespace Net.Bertware.Bukkitgui2.AddOn.Plugins
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.tabctrlPlugins.Controls.Add(this.tabInstalled);
-			this.tabctrlPlugins.Controls.Add(this.tabBukget);
+			this.tabctrlPlugins.Controls.Add(this.tabSpiget);
 			this.tabctrlPlugins.Location = new System.Drawing.Point(0, 0);
 			this.tabctrlPlugins.Name = "tabctrlPlugins";
 			this.tabctrlPlugins.SelectedIndex = 0;
@@ -76,26 +76,26 @@ namespace Net.Bertware.Bukkitgui2.AddOn.Plugins
 			this.installedCtrl.TabIndex = 0;
 			this.installedCtrl.UseSelectable = true;
 			// 
-			// tabBukget
+			// tabSpiget
 			// 
-			this.tabBukget.Controls.Add(this.bukgetCtrl);
-			this.tabBukget.Location = new System.Drawing.Point(4, 38);
-			this.tabBukget.Name = "tabBukget";
-			this.tabBukget.Padding = new System.Windows.Forms.Padding(3);
-			this.tabBukget.Size = new System.Drawing.Size(792, 458);
-			this.tabBukget.TabIndex = 1;
-			this.tabBukget.Text = Locale.Tr("Available plugins");
-			this.tabBukget.UseVisualStyleBackColor = true;
+			this.tabSpiget.Controls.Add(this.spigetCtrl);
+			this.tabSpiget.Location = new System.Drawing.Point(4, 38);
+			this.tabSpiget.Name = "tabSpiget";
+			this.tabSpiget.Padding = new System.Windows.Forms.Padding(3);
+			this.tabSpiget.Size = new System.Drawing.Size(792, 458);
+			this.tabSpiget.TabIndex = 1;
+			this.tabSpiget.Text = Locale.Tr("Available plugins");
+			this.tabSpiget.UseVisualStyleBackColor = true;
 			// 
-			// bukgetCtrl
+			// spigetCtrl
 			// 
-			this.bukgetCtrl.BackColor = System.Drawing.Color.White;
-			this.bukgetCtrl.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.bukgetCtrl.Location = new System.Drawing.Point(3, 3);
-			this.bukgetCtrl.Name = "bukgetCtrl";
-			this.bukgetCtrl.Size = new System.Drawing.Size(786, 452);
-			this.bukgetCtrl.TabIndex = 0;
-			this.bukgetCtrl.UseSelectable = true;
+			this.spigetCtrl.BackColor = System.Drawing.Color.White;
+			this.spigetCtrl.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.spigetCtrl.Location = new System.Drawing.Point(3, 3);
+			this.spigetCtrl.Name = "spigetCtrl";
+			this.spigetCtrl.Size = new System.Drawing.Size(786, 452);
+			this.spigetCtrl.TabIndex = 0;
+			this.spigetCtrl.UseSelectable = true;
 			// 
 			// PluginsTab
 			// 
@@ -105,7 +105,7 @@ namespace Net.Bertware.Bukkitgui2.AddOn.Plugins
 			this.Size = new System.Drawing.Size(800, 500);
 			this.tabctrlPlugins.ResumeLayout(false);
 			this.tabInstalled.ResumeLayout(false);
-			this.tabBukget.ResumeLayout(false);
+			this.tabSpiget.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -115,7 +115,7 @@ namespace Net.Bertware.Bukkitgui2.AddOn.Plugins
 		private MetroTabControl tabctrlPlugins;
 		private System.Windows.Forms.TabPage tabInstalled;
 		private InstalledPlugins.InstalledPluginsControl installedCtrl;
-		private System.Windows.Forms.TabPage tabBukget;
-		private Bukget.BukgetPluginsControl bukgetCtrl;
+		private System.Windows.Forms.TabPage tabSpiget;
+		private Spiget.SpigetPluginsControl spigetCtrl;
 	}
 }

@@ -106,6 +106,22 @@
     <Compile Include="AddOn\Backup\BackupTab.Designer.cs">
       <DependentUpon>BackupTab.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddOn\Plugins\Spiget\api2\Spiget.cs" />
+    <Compile Include="AddOn\Plugins\Spiget\api2\SpigetCategory.cs" />
+    <Compile Include="AddOn\Plugins\Spiget\api2\SpigetResource.cs" />
+    <Compile Include="AddOn\Plugins\Spiget\api2\SpigetVersion.cs" />
+    <Compile Include="AddOn\Plugins\Spiget\SpigetPluginsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddOn\Plugins\Spiget\SpigetPluginsControl.Designer.cs">
+      <DependentUpon>SpigetPluginsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddOn\Plugins\Spiget\SpigetPluginView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOn\Plugins\Spiget\SpigetPluginView.Designer.cs">
+      <DependentUpon>SpigetPluginView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ConsoleInput\AutoCompletionMenu.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -529,6 +545,12 @@
     <EmbeddedResource Include="AddOn\Plugins\PluginsTab.resx">
       <DependentUpon>PluginsTab.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddOn\Plugins\Spiget\SpigetPluginsControl.resx">
+      <DependentUpon>SpigetPluginsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddOn\Plugins\Spiget\SpigetPluginView.resx">
+      <DependentUpon>SpigetPluginView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddOn\Settings\VariousSettings.resx">
       <DependentUpon>VariousSettings.cs</DependentUpon>
     </EmbeddedResource>
@@ -596,6 +618,7 @@
     </EmbeddedResource>
     <None Include="app.config" />
     <Compile Include="MinecraftServers\Tools\Bukkit\dlb.cs" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
