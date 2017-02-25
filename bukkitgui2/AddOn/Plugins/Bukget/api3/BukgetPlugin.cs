@@ -248,7 +248,7 @@ namespace Net.Bertware.Bukkitgui2.AddOn.Plugins.Bukget.api3
 					result.Add(plugin);
 				}
 			}
-			else
+			else if (json.StartsWith("{")) 
 			{
 				result.Add(new BukgetPlugin(json));
 			}
